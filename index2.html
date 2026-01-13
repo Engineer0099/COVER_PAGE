@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Page Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="header">
+                <h1>Cover Page Generator</h1>
+                <p>Fill in the details below to generate your assignment cover page</p>
+            </div>
+
+            <form id="coverForm">
+                <div class="form-group">
+                    <label for="course">COURSE:</label>
+                    <select id="course" required>
+                        <option value="">Select Course</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Business Administration">Business Administration</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Psychology">Psychology</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Law">Law</option>
+                        <option value="Art & Design">Art & Design</option>
+                    </select>
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <div class="form-group">
+                    <label for="moduleName">MODULE NAME:</label>
+                    <select id="moduleName" required>
+                        <option value="">Select Module</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Data Structures">Data Structures</option>
+                        <option value="Database Management">Database Management</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="Machine Learning">Machine Learning</option>
+                        <option value="Networking">Networking</option>
+                    </select>
+                    <i class="fas fa-book"></i>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="moduleCode">MODULE CODE:</label>
+                        <input type="text" id="moduleCode" readonly>
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="lecturerName">LECTURER NAME:</label>
+                        <input type="text" id="lecturerName" readonly>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="natureOfWork">NATURE OF WORK:</label>
+                    <select id="natureOfWork" required>
+                        <option value="">Select Type</option>
+                        <option value="Individual">Individual</option>
+                        <option value="Group">Group</option>
+                    </select>
+                    <i class="fas fa-users"></i>
+                </div>
+
+                <div class="form-group">
+                    <label for="submissionDate">SUBMISSION DATE:</label>
+                    <input type="date" id="submissionDate" required>
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentName">STUDENT NAME:</label>
+                    <input type="text" id="studentName" required>
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="regNo">REG NO:</label>
+                        <input type="text" id="regNo" required>
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="stream">STREAM:</label>
+                        <input type="text" id="stream" required>
+                        <i class="fas fa-stream"></i>
+                    </div>
+                </div>
+
+                <button type="button" class="generate-btn" id="generateBtn">
+                    <i class="fas fa-file-download"></i> Generate Cover Page
+                </button>
+            </form>
+        </div>
+
+        <div class="preview-container">
+            <div class="university-logo">
+                <i class="fas fa-university"></i>
+                UNIVERSITY OF KNOWLEDGE
+            </div>
+            
+            <h2 class="preview-title">Cover Page Preview</h2>
+            
+            <div class="cover-preview" id="coverPreview">
+                <h2>ASSIGNMENT COVER PAGE</h2>
+                
+                <div class="preview-field">
+                    <label>COURSE:</label>
+                    <span id="previewCourse">-</span>
+                </div>
+                
+                <div class="preview-field">
+                    <label>MODULE NAME:</label>
+                    <span id="previewModuleName">-</span>
+                </div>
+                
+                <div class="preview-field">
+                    <label>MODULE CODE:</label>
+                    <span id="previewModuleCode">-</span>
+                </div>
+                
+                <div class="preview-field">
+                    <label>LECTURER NAME:</label>
+                    <span id="previewLecturerName">-</span>
+                </div>
+                
+                <div class="preview-field">
+                    <label>NATURE OF WORK:</label>
+                    <span id="previewNatureOfWork">-</span>
+                </div>
+                
+                <div class="preview-field">
+                    <label>SUBMISSION DATE:</label>
+                    <span id="previewSubmissionDate">-</span>
+                </div>
+                
+                <div class="preview-field">
+                    <label>STUDENT NAME:</label>
+                    <span id="previewStudentName">-</span>
+                </div>
+                
+                <div class="preview-field">
+                    <label>REG NO:</label>
+                    <span id="previewRegNo">-</span>
+                </div>
+                
+                <div class="preview-field">
+                    <label>STREAM:</label>
+                    <span id="previewStream">-</span>
+                </div>
+            </div>
+            
+            <div class="watermark">
+                Generated by Cover Page Generator
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+
+</body>
+</html>
