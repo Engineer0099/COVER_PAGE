@@ -59,3 +59,4 @@ function generatePDF() {
         doc.save(`${clean(document.getElementById("studentName").value)}_${clean(document.getElementById("moduleName").value)}_${clean(document.getElementById("natureOfWork").value)}_Cover.pdf`);
     };
 }
+document.getElementById("generateBtn").addEventListener("click", generatePDF);

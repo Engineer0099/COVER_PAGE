@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cover Page Generator</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== CARD ===== */
+.form-card {
+    background: #ffffff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    animation: slideUp 0.8s ease;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.form-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* ===== INPUT GROUP ===== */
+.group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 13px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0,51,102,0.3);
+}
+
+/* ===== BUTTON ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #003366;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-card">
+    <h2>📄 Cover Page Generator</h2>
+
+    <div class="group">
+        <label>COURSE</label>
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>BIT</option>
+            <option>BBA</option>
+            <option>BCOM</option>
+        </select>
+    </div>
+
+    <div class="group">
+        <label>MODULE NAME</label>
+        <select id="moduleName" onchange="fillModuleData()">
+            <option value="">Select Module</option>
+            <option value="DS">DATA STRUCTURES</option>
+            <option value="DB">DATABASE SYSTEMS</option>
+            <option value="OS">OPERATING SYSTEMS</option>
+        </select>
+    </div>
+
+    <div class="group">
+        <label>MODULE CODE</label>
+        <input id="moduleCode" readonly>
+    </div>
+
+    <div class="group">
+        <label>LECTURER NAME</label>
+        <input id="lecturerName" readonly>
+    </div>
+
+    <div class="group">
+        <label>NATURE OF WORK</label>
+        <select id="natureOfWork">
+            <option>INDIVIDUAL</option>
+            <option>GROUP</option>
+        </select>
+    </div>
+
+    <div class="group">
+        <label>SUBMISSION DATE</label>
+        <input type="date" id="submissionDate">
+    </div>
+
+    <div class="group">
+        <label>STUDENT NAME</label>
+        <input id="studentName">
+    </div>
+
+    <div class="group">
+        <label>REG NO</label>
+        <input id="regNo">
+    </div>
+
+    <div class="group">
+        <label>STREAM</label>
+        <input id="stream">
+    </div>
+
+    <button onclick="createCover()">CREATE COVER PAGE</button>
+</div>
+
+<script>
+/* ===== MODULE AUTO DATA ===== */
+const moduleData = {
+    DS: { code: "CS201", lecturer: "Dr. A. John" },
+    DB: { code: "CS305", lecturer: "Mr. M. David" },
+    OS: { code: "CS310", lecturer: "Dr. S. Peter" }
+};
+
+function fillModuleData() {
+    const selected = document.getElementById("moduleName").value;
+    document.getElementById("moduleCode").value = selected ? moduleData[selected].code : "";
+    document.getElementById("lecturerName").value = selected ? moduleData[selected].lecturer : "";
+}
+
+function createCover() {
+    alert("Cover Page PDF generation logic goes here ✔");
+}
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

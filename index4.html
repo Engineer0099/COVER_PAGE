@@ -2,32 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CBE Cover Page Generator</title>
+<title>Cover Page Generator</title>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<link rel="stylesheet" href="styles.css">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <link rel="stylesheet" href="style4.css">
 </head>
 
 <body>
 
-    <!-- <div class="container">
-    <h2>Cover Page Generator</h2>
-
-    <input id="course" placeholder="Course">
-    <input id="moduleName" placeholder="Module Name">
-    <input id="moduleCode" placeholder="Module Code">
-    <input id="lecturerName" placeholder="Lecturer Name">
-    <input id="natureOfWork" placeholder="Nature of Work">
-    <input id="submissionDate" placeholder="Submission Date">
-    <input id="studentName" placeholder="Student Name">
-    <input id="regNo" placeholder="Registration Number">
-    <input id="stream" placeholder="Stream">
-
-    <button onclick="generatePDF()">Generate PDF</button>
-    </div> -->
-    <div class="app">
+<div class="app">
 
     <h1><i class="fa-solid fa-file-lines"></i> Cover Page Generator</h1>
 
@@ -97,12 +82,13 @@
                 <i class="fa-solid fa-eye"></i> Preview
             </button>
 
-            <button type="submit" onclick="generatePDF()">
+            <button type="submit" id="generateBtn">
                 <i class="fa-solid fa-file-pdf"></i> Generate PDF
             </button>
         </div>
     </form>
 </div>
+
 <!-- ===== PREVIEW MODAL ===== -->
 <div id="previewModal">
     <div class="preview-box">
@@ -112,9 +98,7 @@
     </div>
 </div>
 
-
-    <script src="ui.js"></script>
-    <script src="script.js"></script>
-
+<script src="ui.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
