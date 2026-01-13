@@ -1,7 +1,7 @@
 const moduleData = {
-    DS: { code: "CS201", lecturer: "Dr. A. John" },
-    DB: { code: "CS305", lecturer: "Mr. M. David" },
-    OS: { code: "CS310", lecturer: "Dr. S. Peter" }
+    DS: { code: "ITU07313", lecturer: "Dr. AHMED KIJAZI" },
+    // DB: { code: "CS305", lecturer: "Mr. M. David" },
+    // OS: { code: "CS310", lecturer: "Dr. S. Peter" }
 };
 
 document.getElementById("moduleName").addEventListener("change", e => {
