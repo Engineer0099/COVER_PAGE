@@ -1,6 +1,6 @@
 const moduleData = {
     DS: { code: "ITU07313", lecturer: "Dr. AHMED KIJAZI" },
-    COM: { code: "BAU07104", lecturer: "" },
+    COM: { code: "BAU07104", lecturer: "Mr. ENOCK OJWANG" },
     // DB: { code: "CS305", lecturer: "Mr. M. David" },
     // OS: { code: "CS310", lecturer: "Dr. S. Peter" }
 };
