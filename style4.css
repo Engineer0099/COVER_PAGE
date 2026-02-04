@@ -101,3 +101,40 @@ button:hover {
     border-radius: 10px;
     animation: fadeIn 0.4s ease;
 }
+.group-section {
+    margin-top: 20px;
+    animation: fadeIn 0.4s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.sub-title {
+    margin: 15px 0 10px;
+    color: #003366;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 13px;
+}
+
+th {
+    background: #f0f4f8;
+}
+
+.add-btn {
+    background: #2c5364;
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+}

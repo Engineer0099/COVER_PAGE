@@ -47,7 +47,7 @@ function generatePDF() {
         }
 
         drawLine("COURSE:", clean(document.getElementById("course").value));
-        drawLine("MODULE NAME:", clean(document.getElementById("moduleName").value) == "DS" ? "DATA STRUCTURES AND ALGORITHIM" : "");
+        drawLine("MODULE NAME:", clean(document.getElementById("moduleName").value) == "DS" ? "DATA STRUCTURES AND ALGORITHIM" : clean(document.getElementById("moduleName").value) == "COM" ? "COMMUNICATION" : "");
         drawLine("MODULE CODE:", clean(document.getElementById("moduleCode").value));
         drawLine("LECTURER NAME:", clean(document.getElementById("lecturerName").value));
         drawLine("NATURE OF WORK:", clean(document.getElementById("natureOfWork").value));
