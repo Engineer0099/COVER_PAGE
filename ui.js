@@ -2,7 +2,7 @@ const moduleData = {
     DS: { code: "ITU07313", lecturer: "Dr. AHMED KIJAZI" },
     COM: { code: "BAU07104", lecturer: "Mr. ENOCK OJWANG" },
     RM: { code: "BAU07414", lecturer: "DR. PRISCA MAKULILO" },
-    // OS: { code: "CS310", lecturer: "Dr. S. Peter" }
+    GD: { code: "ITU07415", lecturer: "MR KELVIN MBUYA" }
 };
 
 document.getElementById("moduleName").addEventListener("change", e => {
