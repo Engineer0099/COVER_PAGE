@@ -50,7 +50,7 @@ function generatePDF() {
         drawLine("MODULE NAME:", clean(document.getElementById("moduleName").value) == "DS" ? "DATA STRUCTURES AND ALGORITHIM" : clean(document.getElementById("moduleName").value) == "COM" ? "COMMUNICATION" : clean(document.getElementById("moduleName").value) == "RM" ? "BUSINESS RESEARCH METHODOLOGY" : clean(document.getElementById("moduleName").value) == "GD" ? "GRAPHIC DESIGN" : "");
         drawLine("MODULE CODE:", clean(document.getElementById("moduleCode").value));
         drawLine("LECTURER NAME:", clean(document.getElementById("lecturerName").value));
-        drawLine("NATURE OF WORK:", clean(document.getElementById("moduleName").value) == "RM" ? "GROUP" : clean(document.getElementById("natureOfWork").value));
+        drawLine("NATURE OF WORK:", clean(document.getElementById("natureOfWork").value));
         drawLine("SUBMISSION DATE:", clean(document.getElementById("submissionDate").value));
         drawLine("STUDENT NAME:", clean(document.getElementById("studentName").value));
         drawLine("REG NO:", clean(document.getElementById("regNo").value));
